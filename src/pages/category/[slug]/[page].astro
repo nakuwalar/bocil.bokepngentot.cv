@@ -10,7 +10,7 @@ export const prerender = true;
 
 export async function getStaticPaths() {
   const allVideos: VideoData[] = await getAllVideos();
-  const videosPerPage = 30;
+  const videosPerPage = 40;
 
   const paths = [];
   const categories: { [key: string]: VideoData[] } = {};

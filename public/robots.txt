@@ -9,4 +9,4 @@ Allow: /category/*
 
 
 
-Sitemap: https://bocil.bokepngentot.cv/sitemap-index.xml
+Sitemap: https://bocil.bokepngentot.cv/sitemap.xml

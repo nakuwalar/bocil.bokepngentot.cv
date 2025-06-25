@@ -104,6 +104,16 @@ const siteDescription = desk;
       <p itemprop="description">{desk} Tonton Sekarang Juga!</p>
     </section>
 
+      <section class="random-videos-section">
+    {randomVideos.length > 0 && (
+        <h2 class="section-title">Video Pilihan</h2><div class="video-grid">
+          {randomVideos.map((video) => (
+            <VideoCard video={video} />
+          ))}
+        </div>
+      </section>
+    )}
+
     <section class="all-categories-section">
       {sortedCategories.length === 0 ? (
         <p class="no-videos-overall">Belum ada video yang tersedia di portal ini.</p>
@@ -132,16 +142,6 @@ const siteDescription = desk;
         ))
       )}
     </section>
-
-      <section class="random-videos-section">
-    {randomVideos.length > 0 && (
-        <h2 class="section-title">Video Pilihan</h2><div class="video-grid">
-          {randomVideos.map((video) => (
-            <VideoCard video={video} />
-          ))}
-        </div>
-      </section>
-    )}
 
   </main>
 </Layout>
